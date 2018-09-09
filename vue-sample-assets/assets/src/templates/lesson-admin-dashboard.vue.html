@@ -1,0 +1,54 @@
+<div class="lesson-admin-dashboard">
+    <div class="md-layout">
+        <div class="md-layout-item lesson-admin-dashboard-breadcrumb-section">
+            <span v-for="breadcrumb in vm.breadcrumbs">
+                <a v-if="breadcrumb.index === 1" class="breadcrumb"
+                   :class="{'last': breadcrumb.index === vm.breadcrumbs.length + 1}">
+                    <md-avatar v-if="breadcrumb.icon !== ''" class="md-avatar-icon md-small">
+                        <md-icon>{{ breadcrumb.icon }}</md-icon>
+                    </md-avatar>
+                    {{ breadcrumb.label }}
+                </a>
+                <a v-else :href="breadcrumb.link" class="breadcrumb breadcrumb-nexts" :class="{'last': breadcrumb.index === vm.breadcrumbs.length + 1}">
+                    <md-avatar v-if="breadcrumb.icon !== ''" class="md-avatar-icon md-small">
+                        <md-icon>{{ breadcrumb.icon }}</md-icon>
+                    </md-avatar>
+                    {{ breadcrumb.label }}
+                </a>
+            </span>
+        </div>
+    </div>
+    <div class="md-layout">
+        <div class="md-layout-item lesson-admin-dashboard-toolbar">
+            <form ref="dashboardForm" :action="vm.createPath">
+                <div class="md-layout md-alignment-right">
+                    <div class="md-layout-item">
+                        <md-button class="md-raised md-primary" @click="onClickNew()">新規作成</md-button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div>
+        <div class="md-layout-item lesson-admin-dashboard-contents">
+            <div class="md-layout">
+                <div class="md-layout-item" v-for="lesson in vm.lessons" :key="lesson.id">
+                    <md-card>
+                        <md-card-media>
+                            <md-ripple>
+                                <a :href="'/lscontents/' + lesson.id">
+                                    <img :src="lesson.image" :alt="lesson.title">
+                                </a>
+                            </md-ripple>
+                        </md-card-media>
+                        <md-card-actions>
+                            <md-button class="md-icon-button" @click.prevent="onClickDelete(lesson.id)">
+                                <md-icon>delete</md-icon>
+                            </md-button>
+                        </md-card-actions>
+                    </md-card>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
