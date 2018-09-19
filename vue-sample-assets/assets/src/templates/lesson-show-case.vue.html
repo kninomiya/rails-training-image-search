@@ -27,7 +27,7 @@
             </form>
         </md-list-item>
         <md-list-item>
-            <div>検索結果あああ：{{ vm.images.length }}件</div>
+            <div>検索結果：{{ vm.images.length }}件</div>
         </md-list-item>
         <md-list-item>
             <div class="md-layout">
@@ -39,7 +39,7 @@
                             </md-ripple>
                         </md-card-media>
                         <md-card-actions>
-                            <label v-if="image.selected === true">選択中</label>
+                            <label v-if="image.selected === true">選択中aa</label>
                             <md-button class="md-icon-button" @click.prevent="onClickSelectImage(image.id)">
                                 <md-icon class="md-dark" :class="imageInActiveCssClass[image.id]">done_outline</md-icon>
                             </md-button>

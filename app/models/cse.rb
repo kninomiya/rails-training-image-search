@@ -58,7 +58,9 @@ class LessonImageSearchClient
       end
     }
 
-    # 件数を設定
+    #
+    #
+    #件数を設定
     result[:count] = result[:images].length
 
     result

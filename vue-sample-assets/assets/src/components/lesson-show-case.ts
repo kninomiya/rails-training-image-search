@@ -59,13 +59,13 @@ export default class LessonShowCaseComponent extends Vue {
             headers: {"Content-Type" : "application/json"}
         }
         axios
-            // .post("/api/lsusers", {images: selectedImages}, config)
+        // .post("/api/lsusers", {images: selectedImages}, config)
             .post("/api/lsusers", {images: selectedImages}, config)
             .then( (response) => {
                 console.log(response)
                 element.style.display = "none";
             })
-             .catch( (error) => {
+            .catch( (error) => {
                 console.log(error)
                 element.style.display = "none";
             });
