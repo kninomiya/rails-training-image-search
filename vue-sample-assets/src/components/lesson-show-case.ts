@@ -60,13 +60,14 @@ export default class LessonShowCaseComponent extends Vue {
         }
         axios
         // .post("/api/lsusers", {images: selectedImages}, config)
-            .post("/api/lsusers", {images: selectedImages}, config)
+            .post("/../controllers/question_image_controller.rb", {images: selectedImages}, config)
             .then( (response) => {
                 console.log(response)
                 element.style.display = "none";
             })
             .catch( (error) => {
                 console.log(error)
+                console.log(selectedImages)
                 element.style.display = "none";
             });
     }

@@ -59518,13 +59518,14 @@ var LessonShowCaseComponent = /** @class */ (function (_super) {
                 };
                 axios__WEBPACK_IMPORTED_MODULE_0___default.a
                     // .post("/api/lsusers", {images: selectedImages}, config)
-                    .post("/api/lsusers", { images: selectedImages }, config)
+                    .post("/../controllers/question_image_controller.rb", { images: selectedImages }, config)
                     .then(function (response) {
                     console.log(response);
                     element.style.display = "none";
                 })
                     .catch(function (error) {
                     console.log(error);
+                    console.log(selectedImages);
                     element.style.display = "none";
                 });
                 return [2 /*return*/];
@@ -59640,7 +59641,7 @@ module.exports = "<div class=lesson-admin-dashboard> <div class=md-layout> <div 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div> <div ref=loadingArea class=loading-area> <div class=loading-area-inner> <md-progress-spinner md-mode=indeterminate></md-progress-spinner> </div> </div> <md-list class=md-double-line> <md-list-item> <form ref=searchForm action=\"\"> <div class=\"md-layout search-form\"> <div class=md-layout-item> <md-field> <md-icon>search</md-icon> <label>検索キーワード</label> <md-input name=keyword v-model=vm.keyword @keyup.enter=onClickSearch()></md-input> </md-field> </div> <div class=md-layout-item> <div> <md-button class=md-raised @click=onClickClear()>クリア</md-button> <md-button class=\"md-raised md-primary\" @click=onClickSave()>保存</md-button> </div> </div> </div> </form> </md-list-item> <md-list-item> <div>検索結果：{{ vm.images.length }}件</div> </md-list-item> <md-list-item> <div class=md-layout> <div class=md-layout-item v-for=\"image in vm.images\" :key=image.id> <md-card> <md-card-media> <md-ripple> <img :src=image.src :alt=image.title> </md-ripple> </md-card-media> <md-card-actions> <label v-if=\"image.selected === true\">選択中aa</label> <md-button class=md-icon-button @click.prevent=onClickSelectImage(image.id)> <md-icon class=md-dark :class=imageInActiveCssClass[image.id]>done_outline</md-icon> </md-button> </md-card-actions> </md-card> </div> </div> </md-list-item> </md-list> </div> ";
+module.exports = "<div> <div ref=loadingArea class=loading-area> <div class=loading-area-inner> <md-progress-spinner md-mode=indeterminate></md-progress-spinner> </div> </div> <md-list class=md-double-line> <md-list-item> <form ref=searchForm action=\"\"> <div class=\"md-layout search-form\"> <div class=md-layout-item> <md-field> <md-icon>search</md-icon> <label>検索キーワード</label> <md-input name=keyword v-model=vm.keyword @keyup.enter=onClickSearch()></md-input> </md-field> </div> <div class=md-layout-item> <div> <md-button class=md-raised @click=onClickClear()>クリア</md-button> <md-button class=\"md-raised md-primary\" @click=onClickSave()>保存</md-button> </div> </div> </div> </form> </md-list-item> <md-list-item> <div>検索結果：{{ vm.images.length }}件</div> </md-list-item> <md-list-item> <div class=md-layout> <div class=md-layout-item v-for=\"image in vm.images\" :key=image.id> <md-card> <md-card-media> <md-ripple> <img :src=image.src :alt=image.title> </md-ripple> </md-card-media> <md-card-actions> <label v-if=\"image.selected === true\">選択中</label> <md-button class=md-icon-button @click.prevent=onClickSelectImage(image.id)> <md-icon class=md-dark :class=imageInActiveCssClass[image.id]>done_outline</md-icon> </md-button> </md-card-actions> </md-card> </div> </div> </md-list-item> </md-list> </div> ";
 
 /***/ })
 

@@ -45,20 +45,20 @@ module.exports = function(env, argv) {
         plugins: [
             new CopyWebpackPlugin([
                 {
-                    from: __dirname + "/css/vue-sample-app.css",
-                    to: __dirname + "/../../app/assets/stylesheets/vue-sample-app.css",
+                    from: __dirname + "/css/app.css",
+                    to: __dirname + "/../app/assets/stylesheets/vue-sample-app.css",
                 },
                 {
                     from: __dirname + "/node_modules/vue-material/dist/vue-material.min.css",
-                    to: __dirname + "/../../app/assets/stylesheets/vue-material.min.css",
+                    to: __dirname + "/../app/assets/stylesheets/vue-material.min.css",
                 },
                 {
                     from: __dirname + "/node_modules/vue-material/dist/theme/default.css",
-                    to: __dirname + "/../../app/assets/stylesheets/default.css",
+                    to: __dirname + "/../app/assets/stylesheets/default.css",
                 },
                 {
-                    from: __dirname + "/js/vue-sample-app.js",
-                    to: __dirname + "/../../app/assets/javascripts/vue-sample-app.js",
+                    from: __dirname + "/js/app.js",
+                    to: __dirname + "/../app/assets/javascripts/vue-sample-app.js",
                 }
             ])
         ]

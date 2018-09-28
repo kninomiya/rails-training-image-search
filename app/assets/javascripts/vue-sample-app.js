@@ -59518,13 +59518,14 @@ var LessonShowCaseComponent = /** @class */ (function (_super) {
                 };
                 axios__WEBPACK_IMPORTED_MODULE_0___default.a
                     // .post("/api/lsusers", {images: selectedImages}, config)
-                    .post("/api/lsusers", { images: selectedImages }, config)
+                    .post("/../../controllers/question_image_controller.rb", { images: selectedImages }, config)
                     .then(function (response) {
                     console.log(response);
                     element.style.display = "none";
                 })
                     .catch(function (error) {
                     console.log(error);
+                    console.log(selectedImages);
                     element.style.display = "none";
                 });
                 return [2 /*return*/];
@@ -59645,4 +59646,4 @@ module.exports = "<div> <div ref=loadingArea class=loading-area> <div class=load
 /***/ })
 
 /******/ });
-//# sourceMappingURL=vue-sample-app.js.map
+//# sourceMappingURL=app.js.map
