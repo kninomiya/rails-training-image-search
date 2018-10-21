@@ -44,16 +44,16 @@ class QuestionsImageController < ApplicationController
   # after_create :upload_image, if: :cover_image
 
     bucket.create_file "/Users/ninomiyakouichirou/RubymineProjects/rails-training-image-search/rails-training-image-search/test.jpg",
-                       "/screenshot/test.jpg"
+                       "/screenshot/test.jpg",
     # content_type: cover_image.content_type,
-    acl "public"
+    acl: "public"
 
     image_path = images[0]["src"]
     character = images[0]["id"]
     genre = 1
 
     # Resultsクラス(resultテーブル用のモデル)のcreateメソッドを実行・DB上のresultテーブルにレコードを新規登録
-    question = Question.create({:image_path => image_path, :qenre => genre, :character_string => character });
+    question = Question.create({:image_path => image_path, :genre => genre, :character_string => character });
 
     respond_to do |format|
       format.json {

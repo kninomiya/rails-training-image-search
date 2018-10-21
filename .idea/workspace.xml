@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06931199-727d-4410-89e7-c86f1f7ff19a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/questions_image_controller2.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/rails-training-image-search.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rails-training-image-search.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/vue-sample-app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/vue-sample-app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/questions_image_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/questions_image_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-sample-assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-sample-assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-sample-assets/js/app.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue-sample-assets/js/app.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-sample-assets/src/components/lesson-show-case.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vue-sample-assets/src/components/lesson-show-case.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -89,7 +79,7 @@
           <entry key="js" value="17" />
           <entry key="lock" value="3" />
           <entry key="log" value="1" />
-          <entry key="rb" value="965" />
+          <entry key="rb" value="981" />
           <entry key="ts" value="498" />
         </counts>
       </usages-collector>
@@ -100,7 +90,7 @@
           <entry key="JavaScript" value="17" />
           <entry key="Log" value="1" />
           <entry key="PLAIN_TEXT" value="13" />
-          <entry key="Ruby" value="1002" />
+          <entry key="Ruby" value="1018" />
           <entry key="TypeScript" value="498" />
         </counts>
       </usages-collector>
@@ -121,7 +111,7 @@
         <entry file="file://$PROJECT_DIR$/app/controllers/questions_image_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="242">
-              <caret line="51" column="31" lean-forward="true" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
             </state>
           </provider>
         </entry>
@@ -227,10 +217,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="-158" />
-    <option name="y" value="313" />
     <option name="width" value="1440" />
-    <option name="height" value="817" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -479,12 +467,12 @@
       <workItem from="1539090989218" duration="10819000" />
       <workItem from="1539785522292" duration="1003000" />
       <workItem from="1540043712051" duration="313000" />
-      <workItem from="1540086708113" duration="9793000" />
+      <workItem from="1540086708113" duration="11425000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96025000" />
+    <option name="totallyTimeSpent" value="97657000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -755,7 +743,7 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/questions_image_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
-          <caret line="51" column="31" lean-forward="true" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
         </state>
       </provider>
     </entry>
