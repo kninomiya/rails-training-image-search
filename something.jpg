@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>example.jpg - Exmple.com</title>
+  <meta name="description" content="This is an example website that can be used as a demo when creating a dummy link for demonstration purposes.">
+  <meta name="keywords" content="Exmple,Example,Exmple.com">
+</head>
+
+<body>
+
+<center><table style="margin-top: 2px" width=640><tr><td>
+
+<h2>Example Website - example.jpg</h2>
+
+<p>This is an example website that can be used to demonstrate links without really linking
+    to any real site. The domains example.com, example.net and example.org are reserved
+    and cannot be followed through a link, while this misspelled domain exmple.com work
+    as intended when linked to.
+    
+    
+<p>You searched for the URL <b><i>example.jpg</i></b> on exmple.com and this is an example
+    page generated to serve you better.
+
+<p>The main page if this example website is located at <a href="http://www.exmple.com">Exmple, Example</a>
+    and is not much different from this page
+
+
+</td></tr></table></center>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=5483094; 
+var sc_invisible=1; 
+var sc_partition=60; 
+var sc_click_stat=1; 
+var sc_security="dc467e28"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="counter customisable"
+href="http://www.statcounter.com/free_hit_counter.html"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/5483094/0/dc467e28/1/"
+alt="counter customisable" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+</body>
+
+</html>

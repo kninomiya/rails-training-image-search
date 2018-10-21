@@ -16,6 +16,7 @@ class QuestionsImageController < ApplicationController
         file.puts image.read
       end
     }
+
     storage = Google::Cloud::Storage.new(
         project_id: "polynomial-net-212709",
         credentials: "/Users/ninomiyakouichirou/RubymineProjects/key/My First Project-78cf42cd92b2.json"
@@ -27,26 +28,9 @@ class QuestionsImageController < ApplicationController
     # bucketを指定
     bucket = storage.bucket bucket_name
 
-  # def self.storage_bucket
-  #   @storage_bucket ||= begin
-  #     config = Rails.application.config.x.settings
-  #     storage = Google::Cloud::Storage.new project_id: config["polynomial-net-212709"],
-  #                                          credentials: config["/Users/ninomiyakouichirou/RubymineProjects/key/My First Project-78cf42cd92b2.json"]
-  #     storage.bucket config["ninomiya_bucket"]
-  #   end
-  # end
-
-    # bucket.create_file "/Users/ninomiyakouichirou/RubymineProjects/rails-training-image-search/rails-training-image-search/test.jpg",
-    #                    "/screenshot/"+ name + ".png"
-    # content_type: cover_image.content_type,
-    # acl: "public"
-
-  # after_create :upload_image, if: :cover_image
-
     bucket.create_file "/Users/ninomiyakouichirou/RubymineProjects/rails-training-image-search/rails-training-image-search/test.jpg",
-                       "/screenshot/test.jpg"
-    # content_type: cover_image.content_type,
-    acl "public"
+                       "/screenshot/"+ name + ".png"
+
 
     image_path = images[0]["src"]
     character = images[0]["id"]

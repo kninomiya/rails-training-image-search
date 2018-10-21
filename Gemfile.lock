@@ -80,6 +80,7 @@ GEM
     crass (1.0.4)
     declarative (0.0.10)
     declarative-option (0.1.0)
+    digest-crc (0.4.1)
     domain_name (0.5.20180417)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.5.0)
@@ -259,6 +260,15 @@ GEM
       mime-types (~> 3.0)
       representable (~> 3.0)
       retriable (>= 2.0, < 4.0)
+    google-cloud-core (1.2.6)
+      google-cloud-env (~> 1.0)
+    google-cloud-env (1.0.4)
+      faraday (~> 0.11)
+    google-cloud-storage (1.14.2)
+      digest-crc (~> 0.4)
+      google-api-client (~> 0.23)
+      google-cloud-core (~> 1.2)
+      googleauth (~> 0.6.2)
     googleauth (0.6.4)
       faraday (~> 0.12)
       jwt (>= 1.4, < 3.0)
@@ -295,7 +305,6 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2018.0812)
     mimemagic (0.3.2)
-    mini_magick (4.9.2)
     mini_mime (1.0.1)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
@@ -436,10 +445,10 @@ DEPENDENCIES
   dotenv-rails
   fog
   google-api-client
+  google-cloud-storage
   jbuilder (~> 2.5)
   json
   listen (>= 3.0.5, < 3.2)
-  mini_magick (~> 4.8)
   mysql2 (>= 0.3.18, < 0.6.0)
   puma (~> 3.11)
   rails (~> 5.2.1)

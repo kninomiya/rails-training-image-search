@@ -63,7 +63,6 @@ export default class LessonShowCaseComponent extends Vue {
             .post("/questions_image", {images: selectedImages}, config)
             .then( (response) => {
                 console.log(response)
-                // console.log({images: selectedImages})
                 element.style.display = "none";
             })
             .catch( (error) => {

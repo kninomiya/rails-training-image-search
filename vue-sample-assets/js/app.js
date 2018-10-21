@@ -59521,7 +59521,6 @@ var LessonShowCaseComponent = /** @class */ (function (_super) {
                     .post("/questions_image", { images: selectedImages }, config)
                     .then(function (response) {
                     console.log(response);
-                    // console.log({images: selectedImages})
                     element.style.display = "none";
                 })
                     .catch(function (error) {
