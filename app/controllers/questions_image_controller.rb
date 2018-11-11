@@ -44,12 +44,11 @@ class QuestionsImageController < ApplicationController
 
       # Resultsクラス(resultテーブル用のモデル)のcreateメソッドを実行・DB上のresultテーブルにレコードを新規登録
       question = Question.create({:image_path => image_path, :genre => genre, :character_string => character });
-
-      respond_to do |format|
-        format.json {
-          render :json => { status: "ok", question: question.attributes }
-        }
       end
+        respond_to do |format|
+          format.json {
+            render :json => { status: "ok", question: question.attributes }
+          }
     end
   end
 end

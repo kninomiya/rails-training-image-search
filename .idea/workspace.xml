@@ -88,7 +88,7 @@
           <entry key="js" value="17" />
           <entry key="lock" value="3" />
           <entry key="log" value="1" />
-          <entry key="rb" value="1620" />
+          <entry key="rb" value="1641" />
           <entry key="ts" value="498" />
         </counts>
       </usages-collector>
@@ -99,7 +99,7 @@
           <entry key="JavaScript" value="17" />
           <entry key="Log" value="1" />
           <entry key="PLAIN_TEXT" value="13" />
-          <entry key="Ruby" value="1657" />
+          <entry key="Ruby" value="1678" />
           <entry key="TypeScript" value="498" />
         </counts>
       </usages-collector>
@@ -119,10 +119,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/questions_image_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14">
-              <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+            <state relative-caret-position="295">
+              <caret line="37" column="4" lean-forward="true" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
               <folding>
-                <marker date="1541931492148" expanded="true" signature="589:622" ph="..." />
+                <marker date="1541944544371" expanded="true" signature="589:622" ph="..." />
               </folding>
             </state>
           </provider>
@@ -606,12 +606,12 @@
       <workItem from="1541922444365" duration="98000" />
       <workItem from="1541922569505" duration="57000" />
       <workItem from="1541922647420" duration="48000" />
-      <workItem from="1541923043771" duration="6518000" />
+      <workItem from="1541923043771" duration="7574000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135794000" />
+    <option name="totallyTimeSpent" value="136850000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -884,10 +884,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/questions_image_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        <state relative-caret-position="295">
+          <caret line="37" column="4" lean-forward="true" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
           <folding>
-            <marker date="1541931492148" expanded="true" signature="589:622" ph="..." />
+            <marker date="1541944544371" expanded="true" signature="589:622" ph="..." />
           </folding>
         </state>
       </provider>
