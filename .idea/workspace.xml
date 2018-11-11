@@ -4,8 +4,6 @@
     <list default="true" id="06931199-727d-4410-89e7-c86f1f7ff19a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/questions_image_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/questions_image_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/questions_image_controller2.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -90,7 +88,7 @@
           <entry key="js" value="17" />
           <entry key="lock" value="3" />
           <entry key="log" value="1" />
-          <entry key="rb" value="1598" />
+          <entry key="rb" value="1620" />
           <entry key="ts" value="498" />
         </counts>
       </usages-collector>
@@ -101,7 +99,7 @@
           <entry key="JavaScript" value="17" />
           <entry key="Log" value="1" />
           <entry key="PLAIN_TEXT" value="13" />
-          <entry key="Ruby" value="1635" />
+          <entry key="Ruby" value="1657" />
           <entry key="TypeScript" value="498" />
         </counts>
       </usages-collector>
@@ -121,10 +119,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/questions_image_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+            <state relative-caret-position="14">
+              <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
               <folding>
-                <marker date="1541929629790" expanded="true" signature="583:616" ph="..." />
+                <marker date="1541931492148" expanded="true" signature="589:622" ph="..." />
               </folding>
             </state>
           </provider>
@@ -608,15 +606,16 @@
       <workItem from="1541922444365" duration="98000" />
       <workItem from="1541922569505" duration="57000" />
       <workItem from="1541922647420" duration="48000" />
-      <workItem from="1541923043771" duration="4819000" />
+      <workItem from="1541923043771" duration="6518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134095000" />
+    <option name="totallyTimeSpent" value="135794000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49784482" visible="true" weight="0.34785715" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -885,10 +884,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/questions_image_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        <state relative-caret-position="14">
+          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding>
-            <marker date="1541929629790" expanded="true" signature="583:616" ph="..." />
+            <marker date="1541931492148" expanded="true" signature="589:622" ph="..." />
           </folding>
         </state>
       </provider>

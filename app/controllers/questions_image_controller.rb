@@ -17,8 +17,9 @@ class QuestionsImageController < ApplicationController
 
     logger.debug "images123"
     images = params[:images]
-    count = images.length - 1
+    count = images.length
     logger.debug count
+    i = 0
     # logger.debug result[:count]
 
     count.times do |i|
@@ -30,6 +31,7 @@ class QuestionsImageController < ApplicationController
         file.puts image.read
       end
       }
+
       #アップロード元、アップロード先ディレクトリ
       bucket.create_file "/Users/ninomiyakouichirou/RubymineProjects/rails-training-image-search/rails-training-image-search/"+name+".jpg",
                          "/screenshot/"+name+".jpg",
