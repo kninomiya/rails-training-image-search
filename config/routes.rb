@@ -3,3 +3,7 @@ Rails.application.routes.draw do
   resource 'cse'
   resources :questions_image, only: [:create]
 end
+
+# constrains format: :json do
+#
+# end

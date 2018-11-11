@@ -4,18 +4,6 @@ require 'open-uri'
 class QuestionsImageController < ApplicationController
   protect_from_forgery with: :null_session
   def create
-    logger.debug "images"
-    images = params[:images]
-    name = images[0]["id"]
-    logger.debug "name"
-    # url = params[:src]
-    # open("https://support.sugutsukaeru.jp/ja/troubleshooting/installation/1/3-500-internal-server-error-is-a-black-box.png") { |image|
-    open(images[0]["src"]) { |image|
-      # File.open("test.jpg","wb") do |file|
-      File.open(name+".jpg","wb") do |file|
-        file.puts image.read
-      end
-    }
     storage = Google::Cloud::Storage.new(
         project_id: "polynomial-net-212709",
         credentials: "/Users/ninomiyakouichirou/RubymineProjects/key/My First Project-78cf42cd92b2.json"
@@ -27,43 +15,44 @@ class QuestionsImageController < ApplicationController
     # bucketを指定
     bucket = storage.bucket bucket_name
 
-  # def self.storage_bucket
-  #   @storage_bucket ||= begin
-  #     config = Rails.application.config.x.settings
-  #     storage = Google::Cloud::Storage.new project_id: config["polynomial-net-212709"],
-  #                                          credentials: config["/Users/ninomiyakouichirou/RubymineProjects/key/My First Project-78cf42cd92b2.json"]
-  #     storage.bucket config["ninomiya_bucket"]
-  #   end
-  # end
+    logger.debug "images123"
+    images = params[:images]
+    count = images.length - 1
+    logger.debug count
+    # logger.debug result[:count]
 
-    # bucket.create_file "/Users/ninomiyakouichirou/RubymineProjects/rails-training-image-search/rails-training-image-search/test.jpg",
-    #                    "/screenshot/"+ name + ".png"
-    # content_type: cover_image.content_type,
-    # acl: "public"
-
-  # after_create :upload_image, if: :cover_image
-
-    bucket.create_file "/Users/ninomiyakouichirou/RubymineProjects/rails-training-image-search/rails-training-image-search/test.jpg",
-                       "/screenshot/test.jpg",
-    # content_type: cover_image.content_type,
-    acl: "public"
-
-    image_path = images[0]["src"]
-    character = images[0]["id"]
-    genre = 1
-
-    # Resultsクラス(resultテーブル用のモデル)のcreateメソッドを実行・DB上のresultテーブルにレコードを新規登録
-    question = Question.create({:image_path => image_path, :genre => genre, :character_string => character });
-
-    respond_to do |format|
-      format.json {
-        render :json => { status: "ok", question: question.attributes }
+    count.times do |i|
+      name = images[i]["id"]
+      logger.debug "images456"
+      logger.debug i
+      open(images[i]["src"]) { |image|
+      File.open(name+".jpg","wb") do |file|
+        file.puts image.read
+      end
       }
-    end
+      #アップロード元、アップロード先ディレクトリ
+      bucket.create_file "/Users/ninomiyakouichirou/RubymineProjects/rails-training-image-search/rails-training-image-search/"+name+".jpg",
+                         "/screenshot/"+name+".jpg",
+                         # content_type: cover_image.content_type,
+                         acl: "public"
 
-    # bucket.create_file StringIO.new("Hello world!"), "hello-world2.txt"
+      image_path = "https://storage.googleapis.com/ninomiya_bucket//screenshot/"+name+".jpg"
+      character = images[i]["title"]
+      genre = 1
+
+      # Resultsクラス(resultテーブル用のモデル)のcreateメソッドを実行・DB上のresultテーブルにレコードを新規登録
+      question = Question.create({:image_path => image_path, :genre => genre, :character_string => character });
+
+      respond_to do |format|
+        format.json {
+          render :json => { status: "ok", question: question.attributes }
+        }
+      end
+    end
   end
 end
+
+
 # ファイルを作成した上でアップロード
 # bucket.create_file StringIO.new("Hello world!"), "hello-world.txt"
 
