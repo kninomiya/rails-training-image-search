@@ -1,9 +1,35 @@
 require 'google/cloud/storage'
+require 'google/cloud/vision'
 require 'open-uri'
 
 class QuestionsImageController < ApplicationController
   protect_from_forgery with: :null_session
   def create
+    vision = Google::Cloud::Vision.new(
+        project_id: "polynomial-net-212709",
+        credentials: "/Users/ninomiyakouichirou/RubymineProjects/key/Project-9d62f14f14ed.json"
+    )
+    images = params[:images]
+    count = images.length
+    logger.debug "images123"
+    logger.debug count
+    i = 0
+    j = 0
+
+    count.times do |i|
+      file_name = images[i]["src"]
+      # Performs label detection on the image file
+      labels = vision.image(file_name).labels
+      logger.debug "gazou"
+      labels.each do |label|
+        puts "Labels:"
+        puts label.description
+        puts label
+        if label.score > 0.7 then
+          p "ok"
+        end
+      end
+     end
     storage = Google::Cloud::Storage.new(
         project_id: "polynomial-net-212709",
         credentials: "/Users/ninomiyakouichirou/RubymineProjects/key/My First Project-78cf42cd92b2.json"
@@ -15,18 +41,14 @@ class QuestionsImageController < ApplicationController
     # bucketを指定
     bucket = storage.bucket bucket_name
 
-    logger.debug "images123"
-    images = params[:images]
-    count = images.length
-    logger.debug count
-    i = 0
+
     # logger.debug result[:count]
 
-    count.times do |i|
-      name = images[i]["id"]
+    count.times do |j|
+      name = images[j]["id"]
       logger.debug "images456"
-      logger.debug i
-      open(images[i]["src"]) { |image|
+      logger.debug j
+      open(images[j]["src"]) { |image|
       File.open(name+".jpg","wb") do |file|
         file.puts image.read
       end
