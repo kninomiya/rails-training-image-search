@@ -1,4 +1,5 @@
 require 'google/apis/customsearch_v1'
+require 'google/cloud/vision'
 require 'json'
 
 class LessonImageSearchContext
@@ -44,9 +45,11 @@ class LessonImageSearchClient
     api_response = search_client.list_cses(keyword, {cx: @cx})
 
     api_response.items.each{|item|
+    logger.debug "nil123"
 
       images = item.pagemap["cse_image"]
       if (!images.nil? && images.any?)
+        logger.debug "nil456"
         context = LessonImageSearchContext.new(
             item.title,
             item.formatted_url,
@@ -55,11 +58,10 @@ class LessonImageSearchClient
         result[:images].push(context.data)
       else
         puts "No image for #{item.title} #{item.formatted_url}"
+        logger.debug "nil789"
       end
     }
 
-    #
-    #
     #件数を設定
     result[:count] = result[:images].length
 
