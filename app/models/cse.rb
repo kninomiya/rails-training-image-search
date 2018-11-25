@@ -43,22 +43,19 @@ class LessonImageSearchClient
     search_client = Google::Apis::CustomsearchV1::CustomsearchService.new
     search_client.key = @api_key
     api_response = search_client.list_cses(keyword, {cx: @cx})
+    logger.debug "12345"
 
     api_response.items.each{|item|
-    logger.debug "nil123"
-
       images = item.pagemap["cse_image"]
       if (!images.nil? && images.any?)
-        logger.debug "nil456"
         context = LessonImageSearchContext.new(
             item.title,
             item.formatted_url,
             images[0]["src"]
-        )
+       )
         result[:images].push(context.data)
       else
         puts "No image for #{item.title} #{item.formatted_url}"
-        logger.debug "nil789"
       end
     }
 
