@@ -31,10 +31,12 @@
         </md-list-item>
         <md-list-item>
             <div class="md-layout">
+                <!--以下の行を消すと画面が真っ白になる-->
                 <div class="md-layout-item" v-for="image in vm.images" :key="image.id">
                     <md-card>
                         <md-card-media>
                             <md-ripple>
+                                <!--以下の行を消すと画像が表示されなくなる-->
                                 <img :src="image.src" :alt="image.title">
                             </md-ripple>
                         </md-card-media>
