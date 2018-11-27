@@ -30,6 +30,7 @@
             <div>検索結果：{{ vm.images.length }}件</div>
         </md-list-item>
         <md-list-item>
+            <!--以下stylesheets/app.css-->
             <div class="md-layout">
                 <!--以下の行を消すと画面が真っ白になる-->
                 <div class="md-layout-item" v-for="image in vm.images" :key="image.id">
@@ -37,6 +38,7 @@
                         <md-card-media>
                             <md-ripple>
                                 <!--以下の行を消すと画像が表示されなくなる-->
+                                <!--image.src=画像ファイル、image.title=画像のタイトル-->
                                 <img :src="image.src" :alt="image.title">
                             </md-ripple>
                         </md-card-media>
