@@ -18,7 +18,7 @@ class QuestionsImageController < ApplicationController
 
     # ファイルをダウンロードした状態じゃないとスコアは出せない？
     count.times do |i|
-      file_name = images[i]["id"]
+      file_name = images[i]["src"]
       # Performs label detection on the image file
       labels = vision.image(file_name).labels
       logger.debug "gazou"
