@@ -59589,6 +59589,7 @@ var LessonAdminDashboardModel = /** @class */ (function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 var LessonShowCaseModel = /** @class */ (function () {
+    // 多分配列と変数設定？
     function LessonShowCaseModel(images, keyword) {
         this.images = images;
         this.keyword = keyword;

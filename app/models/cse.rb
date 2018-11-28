@@ -43,10 +43,10 @@ class LessonImageSearchClient
     search_client = Google::Apis::CustomsearchV1::CustomsearchService.new
     search_client.key = @api_key
     api_response = search_client.list_cses(keyword, {cx: @cx})
-    logger.debug "12345"
 
     api_response.items.each{|item|
       images = item.pagemap["cse_image"]
+      # logger.debug "12345"
       if (!images.nil? && images.any?)
         context = LessonImageSearchContext.new(
             item.title,

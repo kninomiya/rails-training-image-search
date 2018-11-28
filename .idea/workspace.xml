@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="06931199-727d-4410-89e7-c86f1f7ff19a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/vue-sample-app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/vue-sample-app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/cses_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/cses_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/questions_image_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/questions_image_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/cse.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/cse.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -31,12 +33,13 @@
           <entry key="project.open.time.15" value="4" />
           <entry key="project.open.time.16" value="5" />
           <entry key="project.open.time.17" value="2" />
-          <entry key="project.open.time.19" value="2" />
+          <entry key="project.open.time.19" value="3" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.27" value="1" />
-          <entry key="project.open.time.28" value="2" />
+          <entry key="project.open.time.28" value="3" />
+          <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.4" value="1" />
@@ -44,42 +47,42 @@
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="43" />
+          <entry key="project.opened" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Gemfile" value="8" />
-          <entry key="coffee" value="3" />
-          <entry key="css" value="14" />
-          <entry key="erb" value="33" />
+          <entry key="coffee" value="8" />
+          <entry key="css" value="19" />
+          <entry key="erb" value="34" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="10" />
+          <entry key="html" value="14" />
           <entry key="jpg" value="10" />
-          <entry key="js" value="47" />
+          <entry key="js" value="53" />
           <entry key="json" value="8" />
           <entry key="lock" value="4" />
           <entry key="log" value="5" />
           <entry key="pid" value="1" />
           <entry key="rb" value="61" />
-          <entry key="scss" value="5" />
-          <entry key="ts" value="17" />
+          <entry key="scss" value="7" />
+          <entry key="ts" value="18" />
           <entry key="yml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="14" />
-          <entry key="CoffeeScript" value="3" />
-          <entry key="HTML" value="10" />
+          <entry key="CSS" value="19" />
+          <entry key="CoffeeScript" value="8" />
+          <entry key="HTML" value="14" />
           <entry key="Image" value="10" />
           <entry key="JSON" value="8" />
-          <entry key="JavaScript" value="47" />
+          <entry key="JavaScript" value="53" />
           <entry key="PLAIN_TEXT" value="16" />
-          <entry key="RHTML" value="28" />
+          <entry key="RHTML" value="29" />
           <entry key="Ruby" value="69" />
-          <entry key="SCSS" value="5" />
-          <entry key="TypeScript" value="17" />
+          <entry key="SCSS" value="7" />
+          <entry key="TypeScript" value="18" />
           <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
@@ -88,29 +91,29 @@
           <entry key="Gemfile" value="65" />
           <entry key="as" value="2" />
           <entry key="erb" value="10" />
-          <entry key="html" value="5" />
+          <entry key="html" value="169" />
           <entry key="js" value="17" />
           <entry key="lock" value="3" />
           <entry key="log" value="1" />
-          <entry key="rb" value="2175" />
-          <entry key="ts" value="498" />
+          <entry key="rb" value="2366" />
+          <entry key="ts" value="514" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="ActionScript" value="2" />
-          <entry key="HTML" value="5" />
+          <entry key="HTML" value="169" />
           <entry key="JavaScript" value="17" />
           <entry key="Log" value="1" />
           <entry key="PLAIN_TEXT" value="13" />
-          <entry key="Ruby" value="2240" />
-          <entry key="TypeScript" value="498" />
+          <entry key="Ruby" value="2431" />
+          <entry key="TypeScript" value="514" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="TsLintLanguageService" value="12" />
-          <entry key="TypeScriptServerServiceImpl" value="14" />
+          <entry key="TsLintLanguageService" value="15" />
+          <entry key="TypeScriptServerServiceImpl" value="17" />
         </counts>
       </usages-collector>
     </session>
@@ -123,29 +126,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/questions_image_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-545">
-              <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            <state relative-caret-position="280">
+              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
               <folding>
-                <marker date="1543029294616" expanded="true" signature="1184:1217" ph="..." />
+                <marker date="1543331426353" expanded="true" signature="1219:1252" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/cses_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="48" selection-start-line="48" selection-end-line="48" selection-end-column="23" />
+            <state relative-caret-position="-123">
+              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/cse.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+            <state relative-caret-position="201">
+              <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -153,11 +156,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue-sample-assets/src/components/lesson-show-case.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="39" column="27" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="70">
+              <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -165,8 +165,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue-sample-assets/src/templates/lesson-show-case.vue.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="308">
+              <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue-sample-assets/app/assets/stylesheets/app.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="78" column="28" selection-start-line="78" selection-start-column="14" selection-end-line="78" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -175,10 +184,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>json</find>
-      <find>m</find>
-      <find>保存</find>
-      <find>app</find>
       <find>件数</find>
       <find>Onclickclear</find>
       <find>OnclickClear</find>
@@ -200,6 +205,15 @@
       <find>google-cloud-vision</find>
       <find>logger</find>
       <find>keyword</find>
+      <find>md-list</find>
+      <find>md-dobule</find>
+      <find>md-rise</find>
+      <find>md-raise</find>
+      <find>md-card-media</find>
+      <find>md-la</find>
+      <find>md</find>
+      <find>md-layout</find>
+      <find>md-layout-item</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -216,7 +230,6 @@
         <option value="$PROJECT_DIR$/vue-sample-assets/assets/src/components/lesson-show-case.ts" />
         <option value="$PROJECT_DIR$/vue-sample-assets/assets/tslint.json" />
         <option value="$PROJECT_DIR$/vue-sample-assets/webpack.config.js" />
-        <option value="$PROJECT_DIR$/vue-sample-assets/src/templates/lesson-show-case.vue.html" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/vue-sample-app.js" />
         <option value="$PROJECT_DIR$/vue-sample-assets/js/app.js" />
         <option value="$PROJECT_DIR$/Gemfile.lock" />
@@ -230,6 +243,9 @@
         <option value="$PROJECT_DIR$/app/views/questions_image/create.html.erb" />
         <option value="$PROJECT_DIR$/tmp/pids/server.pid" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/vue-sample-assets/src/templates/app-footer.vue.html" />
+        <option value="$PROJECT_DIR$/vue-sample-assets/src/models/lesson-show-case.ts" />
+        <option value="$PROJECT_DIR$/vue-sample-assets/src/templates/lesson-show-case.vue.html" />
         <option value="$PROJECT_DIR$/app/controllers/questions_image_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/cses_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/cse.rb" />
@@ -261,7 +277,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -293,6 +308,13 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="javascripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rails-training-image-search" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rails-training-image-search" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rails-training-image-search" type="b2602c69:ProjectViewProjectNode" />
@@ -440,6 +462,7 @@
         </subPane>
       </pane>
       <pane id="RailsProjectView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -631,19 +654,22 @@
       <workItem from="1542928360689" duration="5887000" />
       <workItem from="1543024831874" duration="175000" />
       <workItem from="1543025099396" duration="6976000" />
-      <workItem from="1543134720649" duration="7899000" />
+      <workItem from="1543134720649" duration="8156000" />
+      <workItem from="1543241215677" duration="4861000" />
+      <workItem from="1543322716072" duration="7945000" />
+      <workItem from="1543404805610" duration="1845000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163862000" />
+    <option name="totallyTimeSpent" value="178770000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49784482" visible="true" weight="0.40785715" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4982538" visible="true" weight="0.425" />
+      <window_info id="Structure" order="1" sideWeight="0.50174624" side_tool="true" weight="0.41357142" />
       <window_info id="Favorites" order="2" sideWeight="0.5021552" side_tool="true" weight="0.27571428" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.33760187" />
@@ -663,6 +689,28 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49784482" visible="true" weight="0.41357142" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.5021552" side_tool="true" weight="0.27571428" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.33760187" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49928573" visible="true" weight="0.4388824" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007143" side_tool="true" weight="0.3538999" />
+      <window_info anchor="bottom" id="TypeScript" order="12" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -671,56 +719,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/spring.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/config/manifest.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/cse/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/cse/create.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/b85398592097a3df66fccbb200c6b77948eba402b524032f97d82af58ecf05d1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/models/article_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c5e327259846bb57fbb496fc5974d065c929bdd6b10287ab5115225eb530dc49.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/questions_image_controller2.rb" />
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/vue-sample-app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="59644" selection-start-line="59644" selection-end-line="59644" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-sample-assets/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="59520" column="28" selection-start-line="59520" selection-start-column="28" selection-end-line="59520" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vue-sample-assets/app/assets/javascripts/app.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -728,9 +726,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/vue-sample-assets/app/assets/stylesheets/default.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-sample-assets/app/assets/stylesheets/app.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/cses/index.html.erb">
@@ -749,9 +744,6 @@
           <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="12" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/questions_image/create.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
@@ -778,28 +770,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/vue-sample-assets/css/app.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/questions_image.coffee">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/cable.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-sample-assets/src/templates/lesson-admin-dashboard.vue.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-sample-assets/src/templates/app-header.vue.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-sample-assets/src/models/lesson-show-case.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/vue-sample-assets/src/models/lesson-admin-dashboard.ts">
@@ -871,44 +841,129 @@
     <entry file="file://$PROJECT_DIR$/app/models/article.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/questions_image_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/questions_image/create.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-sample-assets/src/templates/app-footer.vue.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-545">
-          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-          <folding>
-            <marker date="1543029294616" expanded="true" signature="1184:1217" ph="..." />
-          </folding>
+        <state relative-caret-position="84">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue-sample-assets/src/templates/lesson-show-case.vue.html">
+    <entry file="file://$PROJECT_DIR$/vue-sample-assets/src/templates/app-header.vue.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/vue-sample-app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="351">
+          <caret line="59642" column="146" selection-start-line="59642" selection-start-column="146" selection-end-line="59642" selection-end-column="146" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/cable.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/cse.coffee">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/cses.coffee">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/test.coffee">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/questions_image.coffee">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/config/manifest.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/cse.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="134" selection-start-column="103" selection-end-column="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/questions_image.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/vue-material.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-sample-assets/src/models/lesson-show-case.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/vue-sample-app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/questions_image_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding>
+            <marker date="1543331426353" expanded="true" signature="1219:1252" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue-sample-assets/src/components/lesson-show-case.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="39" column="27" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="70">
+          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/cses_controller.rb">
+    <entry file="file://$PROJECT_DIR$/vue-sample-assets/src/templates/lesson-show-case.vue.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="48" selection-start-line="48" selection-end-line="48" selection-end-column="23" />
+        <state relative-caret-position="308">
+          <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-sample-assets/src/templates/lesson-admin-dashboard.vue.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-sample-assets/app/assets/stylesheets/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="78" column="28" selection-start-line="78" selection-start-column="14" selection-end-line="78" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/cse.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+        <state relative-caret-position="201">
+          <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/cses_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-123">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
         </state>
       </provider>
     </entry>

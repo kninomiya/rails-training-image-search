@@ -21,33 +21,29 @@ class CsesController < ApplicationController
     result = image_search_client.findBy(@keyword)
     @images = JSON.generate(result[:images])
     @count = result[:count];
+    count = result[:count];
 
-    # images = params[:images]
-    # count = 10
-    # count = images.length
-    # logger.debug "images123"
-    # logger.debug count
-    # i = 0
+    i = result[:count]
+    logger.debug "Parameter"
 
-    file_name = "./test.jpg"
+    count.times do |i|
+      file_name = result[:images][i][:src]
 
-    # Performs label detection on the image file
-    labels = vision.image(file_name).labels
+      logger.debug file_name
 
-    puts "Labels:"
-    labels.each do |label|
+      # Performs label detection on the image file
+      labels = vision.image(file_name).labels
+
+      puts "Labels:"
+      labels.each do |label|
       puts label.description
       puts label
       if label.score > 0.7 then
         p "ok"
       end
+      end
     end
 
-    tester = params[:images]
-
-    logger.debug "parameter"
-    logger.debug tester
-    logger.debug images[0]["src"]
 
 
 
