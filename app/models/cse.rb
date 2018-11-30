@@ -20,7 +20,7 @@ class LessonImageSearchContext
         id: @id,
         title: @title,
         src: @src,
-        selected: @selected
+        selected: @selected,
     }
   end
   def to_json()
@@ -46,7 +46,6 @@ class LessonImageSearchClient
 
     api_response.items.each{|item|
       images = item.pagemap["cse_image"]
-      # logger.debug "12345"
       if (!images.nil? && images.any?)
         context = LessonImageSearchContext.new(
             item.title,

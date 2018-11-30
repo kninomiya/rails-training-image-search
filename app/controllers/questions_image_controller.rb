@@ -13,24 +13,8 @@ class QuestionsImageController < ApplicationController
     count = images.length
     logger.debug "images123"
     logger.debug count
-    i = 0
-    j = 0
 
-    # ファイルをダウンロードした状態じゃないとスコアは出せない？
-    count.times do |i|
-      file_name = images[i]["src"]
-      # Performs label detection on the image file
-      labels = vision.image(file_name).labels
-      logger.debug "gazou"
-      labels.each do |label|
-        puts "Labels:"
-        puts label.description
-        puts label
-        if label.score > 0.7 then
-          p "ok"
-        end
-      end
-     end
+    j = 0
     storage = Google::Cloud::Storage.new(
         project_id: "polynomial-net-212709",
         credentials: "/Users/ninomiyakouichirou/RubymineProjects/key/My First Project-78cf42cd92b2.json"

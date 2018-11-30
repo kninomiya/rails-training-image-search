@@ -22,47 +22,34 @@ class CsesController < ApplicationController
     @images = JSON.generate(result[:images])
     @count = result[:count];
     count = result[:count];
-
-    i = result[:count]
-    logger.debug "Parameter"
+    i = 0
+    flag = []
 
     count.times do |i|
-      file_name = result[:images][i][:src]
-
-      logger.debug file_name
-
+      logger.debug i
+      open(result[:images][i][:src]) { |image|
+        File.open("test.jpg","wb") do |file|
+          file.puts image.read
+        end
+      }
+      file_name = "/Users/ninomiyakouichirou/RubymineProjects/rails-training-image-search/rails-training-image-search/test.jpg"
       # Performs label detection on the image file
       labels = vision.image(file_name).labels
-
       puts "Labels:"
+      flag[i] = "NG"
       labels.each do |label|
       puts label.description
       puts label
-      if label.score > 0.7 then
-        p "ok"
+      if label.description == "dog" then
+        p "OK"
+        flag[i] = "OK"
+      else
+        p "NG"
       end
       end
     end
-
-
-
-
-    # count.times do |i|
-    #   file_name = images[i]["src"]
-    #   # Performs label detection on the image file
-    #   labels = vision.image(file_name).labels
-    #   logger.debug "gazou"
-    #   labels.each do |label|
-    #     puts "Labels:"
-    #     puts label.description
-    #     puts label
-    #     if label.score > 0.7 then
-    #       p "ok"
-    #     end
-    #   end
-    # end
-
-
+    logger.debug result[:images]
+    logger.debug flag
 
     # 先頭１件の画像URLを出力
     respond_to do |format|
