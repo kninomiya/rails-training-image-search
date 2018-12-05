@@ -16,6 +16,18 @@ html, body {
   display: inline-block;
   vertical-align: top; }
 
+.md-card-media-2 {
+  width: 240px;
+  height: 180px;
+  margin: 2px;
+  /*background-color: blue; !* カラーフィルタ効果の色を指定 *!*/
+  display: inline-block;
+  vertical-align: top; }
+.colorfilter-image {
+    opacity: 0.6;    /* カラーフィルタ効果の度合いを指定(※) */
+    display: block;
+}
+
 div.app-header > .md-layout {
   width: calc(100% - 20px);
   height: 80px; }
