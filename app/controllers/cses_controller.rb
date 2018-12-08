@@ -19,11 +19,11 @@ class CsesController < ApplicationController
 
     # キーワードに関連する画像を検索
     result = image_search_client.findBy(@keyword)
-    @images = JSON.generate(result[:images])
+    # @images = JSON.generate(result[:images])
     @count = result[:count];
     count = result[:count];
     i = 0
-    flag = ["OK","OK","NG","NG","OK","NG","NG","NG","OK","OK"];
+    # flag = ["OK","OK","NG","NG","OK","NG","NG","NG","OK","OK"];
 
     count.times do |i|
       logger.debug i
@@ -37,7 +37,7 @@ class CsesController < ApplicationController
       # Performs label detection on the image file
       labels = vision.image(file_name).labels
       puts "Labels:"
-      # flag[i] = "NG"
+      result[:images][i][:flag] = "NG"
       puts result[:images][i]
       labels.each do |label|
       puts label.description
@@ -46,21 +46,18 @@ class CsesController < ApplicationController
       if label.description == "dog" then
         p "OK"
         result[:images][i][:flag] = "OK"
-        # flag[i] = "OK"
-      else
-        # result[:images][i] < "NG"
-        result[:images][i][:flag] = "NG"
-        p "NG"
       end
       end
     end
-    logger.debug result[:images]
     # logger.debug 123456--
 
     # 先頭１件の画像URLを出力
     respond_to do |format|
+      @images = JSON.generate(result[:images])
+      images = result
+      logger.debug images
       format.html
-      format.json { render :json => result }
+      format.json { render :json => images }
     end
   end
   def create

@@ -36,24 +36,26 @@
                 <!--以下の行を消すと画面が真っ白になる-->
                 <div class="md-layout-item" v-for="image in vm.images" :key="image.id">
                     <md-card>
-                      <!--<div v-if=":flag === OK">-->
+                      <div v-if="image.flag === OK">
                         <md-card-media>
                             <md-ripple>
                                 <!--以下の行を消すと画像が表示されなくなる-->
                                 <!--image.src=画像ファイル、image.title=画像のタイトル-->
-                                <img :src="image.src" :alt="image.title">
+                                <img :src="image.src" :alt="image.title" class="colorfilter-image">
+                                <div>テスト：{{ image.flag }}0</div>
                             </md-ripple>
                         </md-card-media>
-                      <!--</div>-->
-                      <!--<div v-else=":flag === NG">-->
-                        <!--<md-card-media>-->
-                            <!--<md-ripple>-->
-                                <!--&lt;!&ndash;以下の行を消すと画像が表示されなくなる&ndash;&gt;-->
-                                <!--&lt;!&ndash;image.src=画像ファイル、image.title=画像のタイトル&ndash;&gt;-->
-                                <!--<img :src="image.src" :alt="image.title" class="colorfilter-image">-->
-                            <!--</md-ripple>-->
-                        <!--</md-card-media>-->
-                      <!--</div>-->
+                      </div>
+                      <div v-else="image.flag === NG">
+                        <md-card-media>
+                            <md-ripple>
+                                <!--以下の行を消すと画像が表示されなくなる-->
+                                <!--image.src=画像ファイル、image.title=画像のタイトル-->
+                                <img :src="image.src" :alt="image.title" class="colorfilter-image">
+                                <div>テスト：{{ image.flag }}1</div>
+                            </md-ripple>
+                        </md-card-media>
+                      </div>
                         <md-card-actions>
                             <label v-if="image.selected === true">選択中</label>
                             <md-button class="md-icon-button" @click.prevent="onClickSelectImage(image.id)">
